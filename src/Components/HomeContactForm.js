@@ -151,7 +151,7 @@ const HomeContactForm = (props) => {
 
         if (checkAllFeildValue) {
             try {
-                const userApiRes = await fetch(`http://pt-international-mandiri-expo.onrender.com/users`, {
+                const userApiRes = await fetch(`https://pt-international-mandiri-expo.onrender.com/users`, {
                     method: 'POST',
                     body: JSON.stringify({
                         fullName,
