@@ -10,6 +10,7 @@ import { makeStyles } from '@material-ui/core';
 import Footer from './Components/Footer';
 import ToastMessage from './Components/ToastMessage';
 import { useEffect, useState } from 'react';
+import Products from './Components/Products';
 
 const useStyles = makeStyles(() => ({
   projectConatiner: {
@@ -58,7 +59,7 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Home showMessage={showMessage} setShowMessage={setShowMessage} />} />
-          <Route path="/Services" element={<Services />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs showMessage={showMessage} setShowMessage={setShowMessage} />} />
           <Route path="*" element={<Navigate to="/" replace />} />

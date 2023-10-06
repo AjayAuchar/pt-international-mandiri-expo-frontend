@@ -1,6 +1,8 @@
 import { makeStyles } from '@material-ui/core';
 import React from 'react';
 import shipIndustryDelivering from '../Images/shipIndustryDelivering.jpg';
+import coconutTree from '../Images/coconutTree.jpeg';
+import coconutFarm from '../Images/coconutFarm.jpg';
 import Services from './Services';
 import DetailPage from './DetailPage';
 import HomeContactForm from './HomeContactForm';
@@ -29,6 +31,7 @@ const useStyles = makeStyles(() => ({
         opacity: 0.5,
     },
     homeTitle: {
+        width : 800,
         position: "absolute",
         top: "60%",
         left: "50%",
@@ -36,18 +39,18 @@ const useStyles = makeStyles(() => ({
         color: "white",
         padding: "10px",
         "& h4": {
-            color: '#fff',
-            textTransform: 'uppercase',
+            color: '#eb0028',
+            textTransform: 'capitalize',
             marginTop: '24px',
             marginBottom: '15px',
-            fontSize: 30,
-            fontFamily: "Roboto"
-
+            fontSize: 20,
+            fontFamily: "Roboto",
+            textAlign : 'justify',
         },
         "& h1": {
-            color: '#eb0028',
+            color: '#fff',
             fontSize: 42,
-            textTransform: 'uppercase',
+            textTransform : 'uppercase',
             marginTop: '0px',
             marginBottom: '15px',
             fontWeight: '600',
@@ -91,14 +94,13 @@ const Home = (props) => {
     return (
         <>
             <div className={classes.homeContainer}>
-                <img className={classes.homeBgImg} src={shipIndustryDelivering} alt="homeShipBgImg2" />
+                <img className={classes.homeBgImg} src={coconutFarm} alt="coconutFarm" />
                 <div className={classes.homeTitle}>
-                    <h4>INTERNATIONAL MANDIRI EXPO</h4>
-                    <h1> PROFESSIONAL IMPORT EXPORT SERVICES  </h1>
+                    <h1>INTERNATIONAL MANDIRI EXPO</h1>
+                    <h4> At PT International Mandiri Expo, we believe in long-term success built on a solid foundation of trust, integrity, and unwavering commitment.  </h4>
                     <p>
                         Welcome to PT.International Mandiri Expo your gateway to global trade!
-                        Established in 2020, we are your dedicated import-export partner, connecting businesses worldwide. With a commitment to excellence, we simplify international trade, offering tailored solutions and unbeatable service.
-                        Discover endless possibilities with PT.International Mandiri Expo. Explore our services, and let's navigate the global marketplace together!
+                        We are a pioneering coal briquette company, established in 2020 with a vision to revolutionize the energy industry. Our commitment to sustainability and innovation drives us to produce high-quality coal briquettes that provide an efficient and eco-friendly alternative to traditional coal consumption. With a dedicated team of experts and state-of-the-art manufacturing processes, we aim to meet the growing global demand for clean and reliable energy sources. At our core, we are driven by a passion for environmental responsibility and a desire to contribute to a greener future for generations to come.
                     </p>
                     <button className={classes.contactBtn} onClick={() => navigate('contact')}> Contact with us </button>
                 </div>

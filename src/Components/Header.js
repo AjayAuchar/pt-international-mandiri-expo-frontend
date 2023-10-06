@@ -56,8 +56,8 @@ const Header = () => {
             name: "Home"
         },
         {
-            route: "/services",
-            name: "Services"
+            route: "/products",
+            name: "Products"
         },
         {
             route: "/about",

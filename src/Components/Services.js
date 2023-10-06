@@ -1,9 +1,9 @@
 import { makeStyles } from '@material-ui/core';
 import React, { useState } from 'react';
 import ServiceCard from './ServiceCard';
-import boatServiceImg from "../Images/boatServiceImg.jpg";
+import coconutCharcoalImg from "../Images/coconutCharcoalImg.jpg";
 import truckTransportImg from "../Images/truckTransportImg.jpeg";
-import airServiceImg from "../Images/airServiceImg.jpg";
+import coconutShellImg from "../Images/coconutShellImg.jpeg";
 
 const useStyles = makeStyles(() => ({
     serviceContainer: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
         justifyContent: 'center',
         alignItems: 'center',
         flexWrap: 'wrap',
-        gap: 35,
+        gap: 50,
         marginTop: 50,
         fontFamily: 'Roboto'
     }
@@ -37,25 +37,20 @@ const Service = () => {
     // state
     const [servicesData, setServicesData] = useState([
         {
-            imgSrc: boatServiceImg,
-            title: 'Ocean Freight Shipping',
-            detail: "We provide our clients with time saving economical solution at extremely affordable rates. At PT.International Mandiri Expo, we pride ourselves on delivering not just cargo but also peace of mind. Trust us to navigate the complexities of ocean freight shipping, ensuring your cargo arrives at its destination securely and in a timely manner. Partner with us for a seamless global shipping experience."
+            imgSrc: coconutCharcoalImg,
+            title: 'COCONUT CHARCOAL BRIQUETTE',
+            detail: "Coconut Charcoal Briquette is a briquette charcoal with coconut shell as the raw material. One of the main functions of Coconut Charcoal Briquette is for sisha or hookah burner. Moreover, people also use the lower grade for barbecue purposes.There are many benefits to use coconut charcoal compare to other type of charcoal. Firstly, coconut charcoal briquette have relatively higher burning point and longer burning time compare to the other type of charcoal. Furthermore, it produces less smokes and natural scent which is a best choice for your sisha/hookah companion. Moreover, you can also use coconut charcoal briquette to cook your food, such as barbeque. Because it has higher burning point, thus it will not easily make your food become over burnt. Due to these tremendous benefits compare to other type of charcoal, the demand of coconut charcoal briquette is keep increasing over the years. Consequently, we have been exporting our coconut charcoal briquette worldwide."
         },
         {
-            imgSrc: airServiceImg,
-            title: 'Air Freight Shipping',
-            detail: "We provide affordable solution for express, consolidation and regular types of PT.International Mandiri Expo service. With our global network of partners and access to major airports worldwide, we ensure that your cargo reaches its destination quickly and efficiently. Our dedicated team of experts handles everything from documentation and customs clearance to cargo tracking and delivery coordination, providing you with peace of mind every step of the way."
-        },
-        {
-            imgSrc: truckTransportImg,
-            title: 'Truck Transport Shipping',
-            detail: "Our dedicated trucking solutions ensure your goods reach their destination safely and on time. Whether you have a local or long-distance shipment, our experienced team and well-maintained fleet are here to provide seamless transportation services tailored to your specific needs. Trust us to deliver excellence on the road, so you can focus on what matters most – your business."
+            imgSrc: coconutShellImg,
+            title: 'COCONUT SHELL CHARCOAL',
+            detail: "Coconut shell charcoal is simply charcoal product that are originally from coconut shell. Previously, people think that coconut shell is waste and they throw it away. However, actually we can process it further to be useful products, such as charcoal. Like other types of charcoal, coconut shell charcoal can be used energy. Coconut shell charcoal is also often to be processed further to be briquette (Coconut Shell Charcoal Briquette) or activated carbon products. People can use coconut charcoal briquette for sisha/hookah or barbecue purpose. While the activated carbon has the functions as water purification, deodorization and purification of air, and catalyst.Coconut charcoal provides several benefits to its users. First, it has higher burning point and relatively longer burning time. Thus, it is suitable for barbecue purposes since it will not easily make your food to be over burnt. Furthermore, it also produces less smokes and have natural scent, which make it convenient to use for various application."
         }
     ])
 
     return (
         <div className={classes.serviceContainer}>
-            <h1> OUR SERVICES </h1>
+            <h1> OUR PRODUCTS </h1>
             <p> Explore our comprehensive import-export solutions, designed to streamline your global trade operations and boost your business's success. </p>
             <div className={classes.serviceCardContainer}>
                 {servicesData.map(serviceData => (

@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 import React, { useState } from 'react';
-import contactImg from '../Images/contactIMg.jpg';
+import aboutUsCoconutImg from '../Images/aboutUsCoconutImg.jpg';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
@@ -315,20 +315,23 @@ const ContactUs = (props) => {
         } else {
             setShowMessage({ ...showMessage, error: true, message: 'please fill the form Data, every field is required' });
         }
+
+        const emptyValue = formFieldData && formFieldData.map(elm => {
+            return { ...elm, value: '' };
+        })
+         setFormFieldData(emptyValue);
     };
 
 
     return (
         <div className={classes.contactContainer}>
             <div className={classes.contactUsTitle}>
-                <img src={contactImg} alt="contactDemo" />
+                <img src={aboutUsCoconutImg} alt="aboutUsCoconutImg" />
                 <div className={classes.contactText}>
                     <h2>Contact us</h2>
                     <h1>We are always with you :)</h1>
                     <p>
-                        We freight to all over the world
-                        The best logistic company, <br />
-                        FAST and SAFELY !
+                    If you have any inquiry, feel free to contact us. Our team will response your inquiry soon.
                     </p>
                 </div>
             </div>

@@ -178,6 +178,11 @@ const HomeContactForm = (props) => {
         } else {
             setShowMessage({ ...showMessage, error: true, message: 'please fill the form Data, every field is required' });
         }
+
+        const emptyValue = formFieldData && formFieldData.map(elm => {
+           return {...elm, value : ''};
+        })
+        setFormFieldData(emptyValue);
     };
 
     return (

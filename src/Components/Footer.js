@@ -75,7 +75,7 @@ const useStyles = makeStyles(() => ({
             // fontWeight : 700,
             fontFamily: 'Roboto',
             marginLeft: 15,
-            textAlign: 'justify',
+            textAlign: 'initial',
             color: '#0000008a'
         }
     },
@@ -158,8 +158,7 @@ const Footer = () => {
                 </h4>
                 <p>
                     Welcome to PT.International Mandiri Expo your gateway to global trade!
-                    Established in 2020, we are your dedicated import-export partner, connecting businesses worldwide. With a commitment to excellence, we simplify international trade, offering tailored solutions and unbeatable service.
-                    Discover endless possibilities with PT.International Mandiri Expo. Explore our services, and let's navigate the global marketplace together!
+                    We are a pioneering coal briquette company, established in 2020 with a vision to revolutionize the energy industry. Our commitment to sustainability and innovation drives us to produce high-quality coal briquettes that provide an efficient and eco-friendly alternative to traditional coal consumption. With a dedicated team of experts and state-of-the-art manufacturing processes, we aim to meet the growing global demand for clean and reliable energy sources. At our core, we are driven by a passion for environmental responsibility and a desire to contribute to a greener future for generations to come.
                 </p>
                 <div className={classes.socialMediaIcons}>
                 <Link to="https://www.facebook.com/people/Ptime-Cro/pfbid0WS4sfd7GURwVR1RFMXzUthAqdCWm4MNY939ABdDTZ69wVGZPt8r1vKUJdwYcbrrUl/?mibextid=7cd5pb"> <FacebookIcon className={classes.socialIcons} /></Link>

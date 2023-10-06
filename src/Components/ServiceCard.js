@@ -2,19 +2,20 @@ import { Card, CardActionArea, CardContent, CardMedia, makeStyles, Typography } 
 import React from 'react';
 const useStyles = makeStyles({
     root: {
-        maxWidth: 450,
+        maxWidth: 550,
     },
     media: {
-        height: 250,
+        height: 300,
     },
     cardContent: {
-        height: 200,
+        height: 315,
         textAlign: 'justify',
         '& .MuiTypography-h5': {
             color: '#eb0028',
             fontWeight: 500,
             textDecoration: 'underline',
             fontFamily: 'Roboto',
+            margin : '8px 0px 15px'
         },
         '& .MuiTypography-body2': {
             fontSize: 14,
