@@ -393,10 +393,11 @@ const ContactUs = (props) => {
                                     <span>Email : </span>
                                 </div>
                                 <div className={classes.emailId}>
-                                    <span> ptmandiriexpo@gmail.com </span>
-                                    <span> sales@internationalmandiriexpo@gmail.com </span>
-                                    <span> ceointernationalmandiriexpo@gmail.com </span>
-                                    <span> admininternationalmandiriexpo@gmail.com </span>
+                                    <span> Ceo@ptinternationalmandiriexpo.com </span>
+                                    <span> Admin@ptinternationalmandiriexpo.com </span>
+                                    <span> Sales@ptinternationalmandiriexpo.com </span>
+                                    <span> Info@ptinternationalmandiriexpo.com </span>
+                                    <span> Singhgurjeet77@ptinternationalmandiriexpo.com </span>
                                 </div>
                             </div>
                         </div>

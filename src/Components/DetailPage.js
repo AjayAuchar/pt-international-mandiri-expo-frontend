@@ -85,7 +85,7 @@ const DetailPage = () => {
     <div className={classes.detailPage}>
       <img className={classes.seaImage} src={detailCoalImg} alt="detailCoalImg" />
       <div className={classes.titleBox}>
-        <h4>We Provide</h4>
+        <h4>We are</h4>
         <h6>The Best Supplier of Coconut Products from Indonesia.</h6>
         <h2>To Book Your Shipping From any Country</h2>
         <button className={classes.contactBtn} onClick={() => navigate('about')}>About us</button>

@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core';
 import React, { useState } from 'react';
 import ServiceCard from './ServiceCard';
-import coconutCharcoalImg from "../Images/coconutCharcoalImg.jpg";
+import HomeProCoalImg from "../Images/HomeProCoalImg.jpeg";
 import truckTransportImg from "../Images/truckTransportImg.jpeg";
 import coconutShellImg from "../Images/coconutShellImg.jpeg";
 
@@ -37,7 +37,7 @@ const Service = () => {
     // state
     const [servicesData, setServicesData] = useState([
         {
-            imgSrc: coconutCharcoalImg,
+            imgSrc: HomeProCoalImg,
             title: 'COCONUT CHARCOAL BRIQUETTE',
             detail: "Coconut Charcoal Briquette is a briquette charcoal with coconut shell as the raw material. One of the main functions of Coconut Charcoal Briquette is for sisha or hookah burner. Moreover, people also use the lower grade for barbecue purposes.There are many benefits to use coconut charcoal compare to other type of charcoal. Firstly, coconut charcoal briquette have relatively higher burning point and longer burning time compare to the other type of charcoal. Furthermore, it produces less smokes and natural scent which is a best choice for your sisha/hookah companion. Moreover, you can also use coconut charcoal briquette to cook your food, such as barbeque. Because it has higher burning point, thus it will not easily make your food become over burnt. Due to these tremendous benefits compare to other type of charcoal, the demand of coconut charcoal briquette is keep increasing over the years. Consequently, we have been exporting our coconut charcoal briquette worldwide."
         },

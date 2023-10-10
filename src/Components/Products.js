@@ -1,9 +1,8 @@
 import { makeStyles } from '@material-ui/core';
 import React from 'react';
-import productCoconutImg from '../Images/productCoconutImg.jpeg';
-import coconutCoal from '../Images/coconutCoal.jpg';
-import coconutShells from '../Images/coconutShells.jpeg';
-import coconutSquare from '../Images/coconutSquare.jpg';
+import productBriquetteImg from '../Images/productBriquetteImg.png';
+import charcoalShellImg from '../Images/charcoalShellImg.jpeg';
+import productCharcoalBri from '../Images/productCharcoalBri.jpeg';
 
 const useStyles = makeStyles(() => ({
     productContainer: {
@@ -142,7 +141,7 @@ const Products = () => {
     return (
         <div className={classes.productContainer}>
             <div className={classes.productImgSection}>
-                <img src={productCoconutImg} alt="productCoconutImg" />
+                <img src={productBriquetteImg} alt="productBriquetteImg" />
                 <h2>
                     Our Products
                 </h2>
@@ -172,14 +171,14 @@ const Products = () => {
                         </div>
                     </div>
                     <div className={classes.charcoalImg}>
-                        <img src={coconutSquare} alt="coconutSquare" />
+                        <img src={productCharcoalBri} alt="productCharcoalBri" />
                     </div>
                 </div>
 
                 <div className={classes.productData}>
                     <span>
-                        Coconut Charcoal Briquette Indonesia PT. Indococo Global Makmur
-                        We, PT Indococo Global Makmur (Pvt. Ltd.) are the best supplier and exporter of Coconut Charcoal Briquette from Indonesia. Therefore, many partners have trusted us to supply their needs of Coconut Charcoal Briquette. We have three basic grades for sisha/hookah, which are grade A, grade B, and grade C (please refer to below table for further information). Moreover, we also provide special grades for barbecue purpose. Moreover, We are open to customize the specification and packaging depends on your requirement. For further information and discussion, feel free to contact us through Whatsapp, Email or the Contact Form.
+                        Coconut Charcoal Briquette Indonesia PT.International Mandiri Expo
+                        We, PT.International Mandiri Expo are the best supplier and exporter of Coconut Charcoal Briquette from Indonesia. Therefore, many partners have trusted us to supply their needs of Coconut Charcoal Briquette. We have three basic grades for sisha/hookah, which are grade A, grade B, and grade C (please refer to below table for further information). Moreover, we also provide special grades for barbecue purpose. Moreover, We are open to customize the specification and packaging depends on your requirement. For further information and discussion, feel free to contact us through Whatsapp, Email or the Contact Form.
                     </span>
                 </div>
 
@@ -202,12 +201,12 @@ const Products = () => {
                                 Our Coconut Shell Charcoal
                             </h4>
                             <span>
-                                We, PT Indococo Global Makmur is one of the leading supplier of Coconut Shell Charcoal from Indonesia. Thus, our team ensure to deliver only high quality products to our customers. The production of coconut shell charcoal is simply by burning the coconut shell in a closed furnace. The burning may take several hours. After that, our team sift and filter the coconut shell charcoal to remove the unnecessary ash. Then, our team check the quality of coconut shell charcoal and pack it to the bulk packaging. The demand of coconut shell charcoal is increasing over the years due to its tremendous benefits, various application and affordable price. It has been one of the best alternatives of charcoal products.
+                                We, PT.International Mandiri Expo is one of the leading supplier of Coconut Shell Charcoal from Indonesia. Thus, our team ensure to deliver only high quality products to our customers. The production of coconut shell charcoal is simply by burning the coconut shell in a closed furnace. The burning may take several hours. After that, our team sift and filter the coconut shell charcoal to remove the unnecessary ash. Then, our team check the quality of coconut shell charcoal and pack it to the bulk packaging. The demand of coconut shell charcoal is increasing over the years due to its tremendous benefits, various application and affordable price. It has been one of the best alternatives of charcoal products.
                             </span>
                         </div>
                     </div>
                     <div className={classes.charcoalImg}>
-                        <img src={coconutShells} alt="coconutShell" />
+                        <img src={charcoalShellImg} alt="charcoalShellImg" />
                     </div>
                 </div>
 

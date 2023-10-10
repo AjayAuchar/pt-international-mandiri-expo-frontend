@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 import React from 'react';
-import homepageSeaImg from "../Images/homepageSeaImg.jpg";
+import AboutCoconutImg from "../Images/AboutCoconutImg.jpeg";
 import coconutCoal from '../Images/coconutCoal.jpg';
 
 const useStyles = makeStyles(() => ({
@@ -42,7 +42,7 @@ const AboutUs = () => {
 
   return (
     <div className={classes.aboutContainer}>
-      <img src={coconutCoal} alt="coconutCoal" />
+      <img src={AboutCoconutImg} alt="AboutCoconutImg" />
       <div className={classes.aboutDetail}>
         <h2>About US</h2>
         <p>
