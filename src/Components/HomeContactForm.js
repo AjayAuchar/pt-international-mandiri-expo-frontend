@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
         '& h2': {
             fontSize: 22,
             textTransform: "uppercase",
-            color: '#eb0028',
+            color: '#0802A3',
         }
     },
     fieldBox: {
@@ -47,7 +47,7 @@ const useStyles = makeStyles(() => ({
         '& span': {
             fontSize: 14,
             fontWeight: 500,
-            color: '#eb0028',
+            color: '#0802A3',
             textAlign: 'start',
             paddingBottom: 8,
         }
@@ -57,7 +57,7 @@ const useStyles = makeStyles(() => ({
         textAlign: 'start',
         "& button": {
             padding: '15px 25px',
-            backgroundColor: '#eb0028',
+            backgroundColor: '#0802A3',
             borderColor: '#e60329',
             color: '#fff',
             cursor: 'pointer',

@@ -3,7 +3,7 @@ import React from 'react';
 
 const useStyles = makeStyles(() => ({
     bussinessLocationTitle: {
-        color: "#eb0028",
+        color: "#0802A3",
         fontSize: 30,
         fontWeight: 900,
         fontFamily: 'Roboto',

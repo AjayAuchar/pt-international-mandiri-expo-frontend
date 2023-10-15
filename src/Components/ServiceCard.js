@@ -3,6 +3,7 @@ import React from 'react';
 const useStyles = makeStyles({
     root: {
         maxWidth: 550,
+        border : '3px solid #0802A3'
     },
     media: {
         height: 300,
@@ -11,7 +12,7 @@ const useStyles = makeStyles({
         height: 315,
         textAlign: 'justify',
         '& .MuiTypography-h5': {
-            color: '#eb0028',
+            color: '#0802A3',
             fontWeight: 500,
             textDecoration: 'underline',
             fontFamily: 'Roboto',

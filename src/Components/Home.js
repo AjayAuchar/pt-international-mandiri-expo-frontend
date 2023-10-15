@@ -1,29 +1,28 @@
 import { makeStyles } from '@material-ui/core';
 import React from 'react';
-import shipIndustryDelivering from '../Images/shipIndustryDelivering.jpg';
-import coconutTree from '../Images/coconutTree.jpeg';
-import coconutFarm from '../Images/coconutFarm.jpg';
 import Services from './Services';
 import DetailPage from './DetailPage';
 import HomeContactForm from './HomeContactForm';
 import BussinessLocationMap from './BussinessLocationMap';
 import { useNavigate } from 'react-router-dom';
+import { CCarousel, CCarouselCaption, CCarouselItem, CImage } from '@coreui/react'
+import CarouselSlider from './CarouselSlider';
 
 const useStyles = makeStyles(() => ({
     homeContainer: {
         width: '100%',
         height: '100%',
-        position: 'relative',
-        '&::before': {
-            content: '""',
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            backgroundColor: 'rgba(0,0,0,0.9)',
-            zIndex: -1, // Place the pseudo-element below the button's content
-        },
+        // position: 'relative',
+        // '&::before': {
+        //     content: '""',
+        //     position: 'absolute',
+        //     top: 0,
+        //     left: 0,
+        //     width: '100%',
+        //     height: '100%',
+        //     backgroundColor: 'rgba(0,0,0,0.9)',
+        //     zIndex: -1, // Place the pseudo-element below the button's content
+        // },
     },
     homeBgImg: {
         width: "100%",
@@ -39,7 +38,7 @@ const useStyles = makeStyles(() => ({
         color: "white",
         padding: "10px",
         "& h4": {
-            color: '#eb0028',
+            color: '#0802A3',
             textTransform: 'capitalize',
             marginTop: '24px',
             marginBottom: '15px',
@@ -71,7 +70,7 @@ const useStyles = makeStyles(() => ({
         borderRadius: '4px',
         textTransform: 'uppercase',
         fontSize: '15px',
-        backgroundColor: '#eb0028',
+        backgroundColor: '#0802A3',
         padding: '15px 30px',
         border: '0px',
         fontWeight: 600,
@@ -79,7 +78,7 @@ const useStyles = makeStyles(() => ({
         "&:hover": {
             textDecoration: 'none',
             backgroundColor: '#f5f5f5',
-            color: '#eb0028',
+            color: '#0802A3',
             cursor: 'pointer',
         }
     }
@@ -93,9 +92,10 @@ const Home = (props) => {
 
     return (
         <>
-            <div className={classes.homeContainer}>
-                <img className={classes.homeBgImg} src={coconutFarm} alt="coconutFarm" />
-                <div className={classes.homeTitle}>
+            {/* <div > */}
+
+                {/* <img className={classes.homeBgImg} src={coconutFarm} alt="coconutFarm" /> */}
+                {/* <div className={classes.homeTitle}>
                     <h1>INTERNATIONAL MANDIRI EXPO</h1>
                     <h4> At PT International Mandiri Expo, we believe in long-term success built on a solid foundation of trust, integrity, and unwavering commitment.  </h4>
                     <p>
@@ -103,8 +103,12 @@ const Home = (props) => {
                         We are a pioneering coal briquette company, established in 2020 with a vision to revolutionize the energy industry. Our commitment to sustainability and innovation drives us to produce high-quality coal briquettes that provide an efficient and eco-friendly alternative to traditional coal consumption. With a dedicated team of experts and state-of-the-art manufacturing processes, we aim to meet the growing global demand for clean and reliable energy sources. At our core, we are driven by a passion for environmental responsibility and a desire to contribute to a greener future for generations to come.
                     </p>
                     <button className={classes.contactBtn} onClick={() => navigate('contact')}> Contact with us </button>
-                </div>
-            </div>
+                </div> */}
+
+
+
+             {/* </div> */}
+             <CarouselSlider />
             <Services />
             <DetailPage />
             <HomeContactForm showMessage={showMessage} setShowMessage={setShowMessage} />

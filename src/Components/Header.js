@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
         display: 'flex',
         alignItems: 'center',
         '& span': {
-            color: "#eb0028",
+            color: "#0802A3",
             fontSize: 17,
             fontWeight: 900,
             fontFamily: 'Roboto'
@@ -81,7 +81,7 @@ const Header = () => {
                         style={({ isActive, isPending }) => {
                             return {
                                 fontWeight: isActive ? "bold" : "",
-                                color: isActive ? "#eb0028" : "#242424",
+                                color: isActive ? "#0802A3" : "#242424",
                                 backgroundColor: isActive ? '#f5f5f5' : ''
                             };
                         }}

@@ -58,7 +58,7 @@ const useStyles = makeStyles(() => ({
             fontWeight: 600,
             textAlign: 'left',
             textTransform: 'uppercase',
-            color: '#eb0028',
+            color: '#fff',
             margin: '20px 0px 0px',
             fontFamily: 'Roboto'
         },
@@ -93,14 +93,16 @@ const useStyles = makeStyles(() => ({
     formSection: {
         width: '40%',
         // height : 500,
-        border: '2px solid #eb0028',
+        border: '3px solid #0802A3',
         borderRadius: 10,
         padding: 20,
         '& h2': {
             fontSize: 22,
             textTransform: "uppercase",
-            color: '#eb0028',
-            fontFamily: 'Roboto'
+            color: '#0802A3',
+            fontFamily: 'Roboto',
+            fontWeight : 900,
+            margin : '10px 0px 20px'
         }
     },
     fieldBox: {
@@ -121,7 +123,7 @@ const useStyles = makeStyles(() => ({
         '& span': {
             fontSize: 14,
             fontWeight: 500,
-            color: '#eb0028',
+            color: '#0802A3',
             textAlign: 'start',
             paddingBottom: 8,
         }
@@ -131,7 +133,7 @@ const useStyles = makeStyles(() => ({
         textAlign: 'start',
         "& button": {
             padding: '10px 25px',
-            backgroundColor: '#eb0028',
+            backgroundColor: '#0802A3',
             borderColor: '#e60329',
             color: '#fff',
             cursor: 'pointer',
@@ -143,28 +145,28 @@ const useStyles = makeStyles(() => ({
         }
     },
     contactRightContainer: {
-        width: '30%',
-        height: '400px',
+        width: '35%',
+        height: 'auto',
         // display: 'flex',
         // flexDirection: 'column',
         padding: 20,
         boxSizing: 'border-box',
-        border: '2px solid #eb0028',
+        border: '3px solid #0802A3',
         borderRadius: 8,
         backgroundColor: '#f5f5f5',
         fontFamily: 'Roboto'
     },
     contactBoxHeader: {
         width: '100%',
-        height: 50,
-        backgroundColor: '#eb0028',
+        height: 150,
+        backgroundColor: '#0802A3',
         color: '#fff',
-        fontSize: 16,
+        fontSize: 20,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         textTransform: 'uppercase',
-        fontWeight: 600,
+        fontWeight: 900,
         borderRadius: 5,
         marginBottom: 25
     },
@@ -180,7 +182,7 @@ const useStyles = makeStyles(() => ({
         display: 'flex',
         gap: 20,
         textAlign: 'start',
-        marginBottom: 30,
+        marginBottom: 35,
         "& span": {
             color: '#0000008a'
         }
@@ -188,6 +190,7 @@ const useStyles = makeStyles(() => ({
     contactEmailBox: {
         width: '100%',
         display: 'flex',
+        fontSize : 18,
     },
     addressLable : {
         width: 100,
@@ -381,8 +384,8 @@ const ContactUs = (props) => {
                                     <span>Telephone No : </span>
                                 </div>
                                 <div className={classes.phoneNum}>
-                                    <span> +62878-1788-3677 </span> <br />
-                                    <span> +62 813-1193-2441 </span>
+                                <span> +62 813-1193-2441 </span> <br />
+                                <span> +62878-1788-3677 </span> 
                                 </div>
                             </div>
                         </div>

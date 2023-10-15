@@ -1,8 +1,8 @@
 import { makeStyles } from '@material-ui/core';
 import React from 'react';
-import productBriquetteImg from '../Images/productBriquetteImg.png';
+import coconutCharcoalBriq from '../Images/coconutCharcoalBriq.jpeg';
 import charcoalShellImg from '../Images/charcoalShellImg.jpeg';
-import productCharcoalBri from '../Images/productCharcoalBri.jpeg';
+import coconutCharcoalBuss from '../Images/coconutCharcoalBuss.jpg';
 
 const useStyles = makeStyles(() => ({
     productContainer: {
@@ -10,7 +10,7 @@ const useStyles = makeStyles(() => ({
     },
     productImgSection: {
         width: '100%',
-        height: 410,
+        height: 500,
         position: 'relative',
         '&::before': {
             content: '""',
@@ -24,7 +24,7 @@ const useStyles = makeStyles(() => ({
         },
         '& img': {
             width: "100%",
-            height: 400,
+            height: 500,
             opacity: 0.5,
         },
         '& h2': {
@@ -54,7 +54,7 @@ const useStyles = makeStyles(() => ({
             fontSize: 30,
             margin: '18px 0px 35px',
             textAlign: 'left',
-            color: '#eb0028',
+            color: '#0802A3',
             textTransform: 'uppercase',
             fontWeight: '600',
             fontFamily: "Roboto",
@@ -88,7 +88,8 @@ const useStyles = makeStyles(() => ({
         alignItems: "center",
         '& img': {
             width: 600,
-            height: 400
+            height: 450,
+            borderRadius : 5
         }
     },
     productData: {
@@ -103,36 +104,23 @@ const useStyles = makeStyles(() => ({
             color: '#0000008a'
         }
     },
-    productTableSection: {
-        margin: '10px 0px',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: "column",
+    coconutDetailImg: {
         '& h4': {
-            color: '#eb0028',
-            fontSize: 22,
-            textTransform: 'uppercase',
+            color: '#0802A3',
+            margin: '18px 0px 35px',
+            fontSize: '30px',
+            textAlign: 'center',
+            fontFamily: 'Roboto',
             fontWeight: '600',
-            fontFamily: "Roboto",
-            textAlign: 'left'
+            textTransform: 'uppercase'
         },
-    },
-    proTable: {
-        // padding: 20,
-        fontSize: 18,
-        '& th, td': {
-            padding: "10px 25px",
-            border: 'none',
-            borderTop: '2px solid #eb0028',
-            borderLeft: '2px solid #eb0028',
-            borderRight: '2px solid #eb0028',
-            borderBottom: '2px solid #eb0028',
-        },
-        '& td': {
-            color: '#0000008a',
+        '& img': {
+            width: '80%',
+            height: 700,
+            border : '3px solid #0802A3',
+            borderRadius : 8
         }
-    }
+    },
 }));
 
 const Products = () => {
@@ -141,7 +129,7 @@ const Products = () => {
     return (
         <div className={classes.productContainer}>
             <div className={classes.productImgSection}>
-                <img src={productBriquetteImg} alt="productBriquetteImg" />
+                <img src={charcoalShellImg} alt="charcoalShellImg" />
                 <h2>
                     Our Products
                 </h2>
@@ -171,7 +159,7 @@ const Products = () => {
                         </div>
                     </div>
                     <div className={classes.charcoalImg}>
-                        <img src={productCharcoalBri} alt="productCharcoalBri" />
+                        <img src={coconutCharcoalBriq} alt="coconutCharcoalBriq" />
                     </div>
                 </div>
 
@@ -210,36 +198,9 @@ const Products = () => {
                     </div>
                 </div>
 
-                <div className={classes.productTableSection}>
-                    <h4>
-                        PRODUCT SPECIFICATION
-                    </h4>
-                    <table className={classes.proTable}>
-                        <tr>
-                            <th>SPECIFICATION</th>
-                            <th>PREMIUM GRADE [A] (SISHA/HOOKAH)</th>
-                            <th>SUPER GRADE [B] (SISHA/HOOKAH)</th>
-                            <th>STANDARD GRADE [C] (SISHA/HOOKAH)</th>
-                        </tr>
-                        <tr>
-                            <td>Calorie</td>
-                            <td>7000-7200 kcal</td>
-                            <td>7000 kcal</td>
-                            <td>6500-7000 kcal</td>
-                        </tr>
-                        <tr>
-                            <td>Moisture</td>
-                            <td>7%</td>
-                            <td>7-10%</td>
-                            <td>7-10%</td>
-                        </tr>
-                        <tr>
-                            <td>Ash content</td>
-                            <td>2% White ash</td>
-                            <td>2.5% White ash</td>
-                            <td>4-5% White ash</td>
-                        </tr>
-                    </table>
+                <div className={classes.coconutDetailImg}>
+                    <h4> Coconut Details </h4>
+                    <img src={coconutCharcoalBuss} alt="coconutCharcoalBuss" />
                 </div>
             </div>
         </div>

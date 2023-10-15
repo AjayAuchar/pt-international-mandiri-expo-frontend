@@ -37,7 +37,7 @@ const useStyles = makeStyles(() => ({
       fontFamily: "Roboto"
     },
     "& h6": {
-      color: '#eb0028',
+      color: '#0802A3',
       fontSize: 45,
       textTransform: 'uppercase',
       marginTop: '0px',
@@ -58,7 +58,7 @@ const useStyles = makeStyles(() => ({
     borderRadius: '4px',
     textTransform: 'uppercase',
     fontSize: '15px',
-    backgroundColor: '#eb0028',
+    backgroundColor: '#0802A3',
     padding: '12px 30px',
     border: '0px',
     fontWeight: 600,
@@ -66,7 +66,7 @@ const useStyles = makeStyles(() => ({
     "&:hover": {
       textDecoration: 'none',
       backgroundColor: '#f5f5f5',
-      color: '#eb0028',
+      color: '#0802A3',
       cursor: 'pointer',
     }
   },

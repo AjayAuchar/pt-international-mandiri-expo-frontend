@@ -35,24 +35,19 @@ const useStyles = makeStyles(() => ({
             marginTop: 10,
             fontSize: 16,
             fontWeight: 600,
-            color: '#eb0028'
+            color: '#0802A3'
         }
     },
     footerNavLink: {
         display: 'flex',
+        justifyContent : 'center',
+        alignItems : 'center',
         marginTop: 15,
-        '& ul': {
-            padding: 0,
-        },
-        '& ul li': {
-            display: 'inline-block',
-            padding: 5,
-            fontSize: 15,
-            color: '#0000008a',
-            '&:hover': {
-                textDecoration: 'underline'
-            }
-        }
+    },
+    link : {
+        margin: 5,
+        fontSize: 16,
+        color: '#0000008a',
     },
     footerLeftSection: {
         width: '30%',
@@ -61,7 +56,7 @@ const useStyles = makeStyles(() => ({
         '& h4': {
             fontSize: 20,
             textAlign: 'start',
-            color: '#eb0028',
+            color: '#0802A3',
             fontWeight: 700,
             fontFamily: 'Roboto',
             margin: '0px 0 20px 5px',
@@ -79,6 +74,9 @@ const useStyles = makeStyles(() => ({
             color: '#0000008a'
         }
     },
+    contactUsIcon :{
+        color : '#0802A3',
+    },
     footerRightSection: {
         width: '45%',
         display: 'flex',
@@ -87,10 +85,10 @@ const useStyles = makeStyles(() => ({
         '& h4': {
             fontSize: 20,
             textAlign: 'start',
-            color: '#eb0028',
+            color: '#0802A3',
             fontWeight: 700,
             fontFamily: 'Roboto',
-            margin: 0,
+            margin: '0px 0px 10px',
         },
         '& p': {
             fontSize: 16,
@@ -113,7 +111,7 @@ const useStyles = makeStyles(() => ({
         height: 35,
         color : '#000000',
         '&:hover' : {
-            color : '#eb0028'
+            color : '#0802A3'
         }
     },
 
@@ -128,27 +126,26 @@ const Footer = () => {
                 <img src={bussinessLogo} alt="bussinessLogo" />
                 <span>PT.International Mandiri Expo</span>
                 <div className={classes.footerNavLink}>
-                    <ul>
-                        <li> Home </li> |
-                        <li> About </li> |
-                        <li> Contact </li> |
-                        <li> Services </li>
-                    </ul>
+                    {/* <ul> */}
+                        <Link className={classes.link} to="/home"> Home </Link> |
+                        <Link className={classes.link} to="/products"> Products </Link> |
+                        <Link className={classes.link} to="/about"> About </Link> |
+                        <Link className={classes.link} to="/contact"> Contact </Link> |
+                    {/* </ul> */}
                 </div>
             </div>
             <div className={classes.footerLeftSection}>
                 <h4> Contact us </h4>
                 <div className={classes.footerDetail}>
-                    <LocationOnIcon />
+                    <LocationOnIcon className={classes.contactUsIcon}/>
                     <span> Address : SOHO CAPITAL LT.32 UNIT 7 JL. LETJEN PARMAN KAV 28 TANJUNG DUREN SELATAN GROGOL PETAMBURAN JAKARTA BARAT DKI JAKARTA, 11470 </span>
-
                 </div>
                 <div className={classes.footerDetail}>
-                    <PhoneIcon />
-                    <span> Telephone No : +62878-1788-3677 </span>
+                    <PhoneIcon className={classes.contactUsIcon}/>
+                    <span> Telephone No : +62 813 1193 2441 </span>
                 </div>
                 <div className={classes.footerDetail}>
-                    <EmailIcon />
+                    <EmailIcon className={classes.contactUsIcon}/>
                     <span> Email : Pt.mandiriexpo@gmail.com </span>
                 </div>
             </div>

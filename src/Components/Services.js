@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => ({
     serviceContainer: {
         marginTop: 30,
         '& h1': {
-            color: '#eb0028'
+            color: '#0802A3'
         },
         '& img': {
             width: "100%",
