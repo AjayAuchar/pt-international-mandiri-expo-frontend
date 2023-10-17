@@ -400,7 +400,6 @@ const ContactUs = (props) => {
                                     <span> Admin@ptinternationalmandiriexpo.com </span>
                                     <span> Sales@ptinternationalmandiriexpo.com </span>
                                     <span> Info@ptinternationalmandiriexpo.com </span>
-                                    <span> Singhgurjeet77@ptinternationalmandiriexpo.com </span>
                                 </div>
                             </div>
                         </div>

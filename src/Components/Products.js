@@ -1,8 +1,9 @@
 import { makeStyles } from '@material-ui/core';
 import React from 'react';
-import coconutCharcoalBriq from '../Images/coconutCharcoalBriq.jpeg';
+import coconutBriquettesImgs from '../Images/coconutBriquettesImgs.jpeg';
 import charcoalShellImg from '../Images/charcoalShellImg.jpeg';
 import coconutCharcoalBuss from '../Images/coconutCharcoalBuss.jpg';
+import productCoalImg from '../Images/productCoalImg.jpeg';
 
 const useStyles = makeStyles(() => ({
     productContainer: {
@@ -159,7 +160,7 @@ const Products = () => {
                         </div>
                     </div>
                     <div className={classes.charcoalImg}>
-                        <img src={coconutCharcoalBriq} alt="coconutCharcoalBriq" />
+                        <img src={coconutBriquettesImgs} alt="coconutBriquettesImgs" />
                     </div>
                 </div>
 
@@ -199,8 +200,13 @@ const Products = () => {
                 </div>
 
                 <div className={classes.coconutDetailImg}>
-                    <h4> Coconut Details </h4>
+                    <h4> Briquette Details </h4>
                     <img src={coconutCharcoalBuss} alt="coconutCharcoalBuss" />
+                </div>
+
+                <div className={classes.coconutDetailImg} style={{marginTop : 60}}>
+                    <h4> Our Product </h4>
+                    <img src={productCoalImg} alt="productCoalImg" />
                 </div>
             </div>
         </div>

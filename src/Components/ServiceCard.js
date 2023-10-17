@@ -3,7 +3,9 @@ import React from 'react';
 const useStyles = makeStyles({
     root: {
         maxWidth: 550,
-        border : '3px solid #0802A3'
+        height: 670,
+        border : '3px solid #0802A3',
+        padding : '0px 0px 25px',
     },
     media: {
         height: 300,

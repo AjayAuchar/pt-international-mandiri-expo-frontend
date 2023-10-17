@@ -6,7 +6,7 @@ import EmailIcon from '@material-ui/icons/Email';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import bussinessLogo from '../Images/bussinessLogo.jpg';
+import bussLogo from '../Images/bussLogo.jpeg';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { Link } from 'react-router-dom';
 
@@ -27,8 +27,8 @@ const useStyles = makeStyles(() => ({
         flexDirection: 'column',
         alignItems: 'start',
         '& img': {
-            width: 120,
-            height: 100,
+            width: 100,
+            height: 75,
             borderRadius : '50%'
         },
         '& span': {
@@ -123,7 +123,7 @@ const Footer = () => {
     return (
         <div className={classes.footerContainer}>
             <div className={classes.footerCompanyDetail}>
-                <img src={bussinessLogo} alt="bussinessLogo" />
+                <img src={bussLogo} alt="bussLogo" />
                 <span>PT.International Mandiri Expo</span>
                 <div className={classes.footerNavLink}>
                     {/* <ul> */}
@@ -146,7 +146,7 @@ const Footer = () => {
                 </div>
                 <div className={classes.footerDetail}>
                     <EmailIcon className={classes.contactUsIcon}/>
-                    <span> Email : Pt.mandiriexpo@gmail.com </span>
+                    <span> Email : ptinternationalmandiriexpo@gmail.com </span>
                 </div>
             </div>
             <div className={classes.footerRightSection}>

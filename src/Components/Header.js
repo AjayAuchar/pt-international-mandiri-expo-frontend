@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import bussinessLogo from '../Images/bussinessLogo.jpg';
+import bussLogo from '../Images/bussLogo.jpeg';
 
 const useStyles = makeStyles(() => ({
     headerContainer: {
@@ -25,6 +25,11 @@ const useStyles = makeStyles(() => ({
     logoBox: {
         display: 'flex',
         alignItems: 'center',
+        '& img' : {
+            width : 100,
+            height : 75,
+            borderRadius : '50%'
+        },
         '& span': {
             color: "#0802A3",
             fontSize: 17,
@@ -72,7 +77,7 @@ const Header = () => {
     return (
         <div className={classes.headerContainer}>
             <div className={classes.logoBox}>
-                <img src={bussinessLogo} alt="bussinessLogo" />
+                <img src={bussLogo} alt="bussLogo" />
                 <span>PT.International Mandiri Expo</span>
             </div>
             <nav className={classes.headerNav}>
