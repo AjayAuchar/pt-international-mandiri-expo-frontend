@@ -4,6 +4,7 @@ import coconutBriquettesImgs from '../Images/coconutBriquettesImgs.jpeg';
 import charcoalShellImg from '../Images/charcoalShellImg.jpeg';
 import coconutCharcoalBuss from '../Images/coconutCharcoalBuss.jpg';
 import productCoalImg from '../Images/productCoalImg.jpeg';
+import coalDetailImg from '../Images/coalDetailImg.jpeg';
 
 const useStyles = makeStyles(() => ({
     productContainer: {
@@ -130,7 +131,7 @@ const Products = () => {
     return (
         <div className={classes.productContainer}>
             <div className={classes.productImgSection}>
-                <img src={charcoalShellImg} alt="charcoalShellImg" />
+                <img src={productCoalImg} alt="productCoalImg" />
                 <h2>
                     Our Products
                 </h2>
@@ -205,8 +206,7 @@ const Products = () => {
                 </div>
 
                 <div className={classes.coconutDetailImg} style={{marginTop : 60}}>
-                    <h4> Our Product </h4>
-                    <img src={productCoalImg} alt="productCoalImg" />
+                    <img src={coalDetailImg} alt="coalDetailImg" style={{height : 900}} />
                 </div>
             </div>
         </div>
