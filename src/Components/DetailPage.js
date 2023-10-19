@@ -37,7 +37,7 @@ const useStyles = makeStyles(() => ({
       fontFamily: "Roboto"
     },
     "& h6": {
-      color: '#0802A3',
+      color: '#fff',
       fontSize: 45,
       textTransform: 'uppercase',
       marginTop: '0px',

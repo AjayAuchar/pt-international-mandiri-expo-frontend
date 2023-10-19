@@ -72,6 +72,39 @@ const useStyles = makeStyles(() => ({
       textTransform: 'uppercase'
     },
   },
+  visionAndMissionContainer : {
+    width : '100%',
+    '& h2': {
+      color: '#0802A3',
+      margin: '25px 0px',
+      fontSize: '30px',
+      textAlign: 'center',
+      fontFamily: 'Roboto',
+      fontWeight: '600',
+      textTransform: 'uppercase'
+    },
+  },
+  visMisSection : {
+    width : '100%',
+    display : 'flex',
+    flexDirection : 'column',
+    alignItems : 'start',
+    padding: '0px 70px',
+    '& h4' : {
+      color: '#0802A3',
+      fontSize: '30px',
+      textAlign: 'center',
+      fontFamily: 'Roboto',
+      fontWeight: '600',
+      textTransform: 'uppercase',
+      margin : '10px 0px 20px'
+    },
+    '& p' : {
+      color: '#0000008a',
+      fontSize: '16px',
+      fontFamily: 'Roboto',
+    }
+  },
   videoSection : {
     display : 'flex',
     justifyContent : 'center',
@@ -119,6 +152,22 @@ const AboutUs = () => {
         <video src={charcoalVideo3}  controls="controls" />
         </div>
       </div>
+
+      <div className={classes.visionAndMissionContainer}>
+        <h2> VISION & MISSION </h2>
+        <div className={classes.visMisSection}>
+          <h4>VISION</h4>
+        <p>&#x2022; Strengthen the domination of Indonesia in exporting coconut and its derivative products throughout the world as well as maintaining sustainable business activities. </p>
+        </div>
+        <div className={classes.visMisSection}>
+        <h4>MISSION</h4>
+        <p>&#x2022; Consistent in delivering high quality, healthy and useful coconut products to our valuable customers through out the world. </p>
+        <p>&#x2022; To have long lasting business by respecting and maintaining great relationship with all of our partners. </p>
+        <p>&#x2022; Commit on sustainable business by being responsible to the environment.</p>
+        </div>
+      </div>
+
+
     </div>
   )
 }
