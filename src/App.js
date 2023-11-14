@@ -11,6 +11,7 @@ import Footer from './Components/Footer';
 import ToastMessage from './Components/ToastMessage';
 import { useEffect, useState } from 'react';
 import Products from './Components/Products';
+import websiteDown from '../src/Images/websiteDown.jpg'
 
 const useStyles = makeStyles(() => ({
   projectConatiner: {
@@ -51,7 +52,8 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <img src={websiteDown} width="100%" height="100%" />
+      {/* <Router>
         {showMessage.success && <ToastMessage showMessage={showMessage} />}
         {showMessage.error && <ToastMessage showMessage={showMessage} />}
         <div className={classes.headerContainer}>
@@ -65,7 +67,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       <Footer />
-      </Router>
+      </Router> */}
     </div>
   );
 }
